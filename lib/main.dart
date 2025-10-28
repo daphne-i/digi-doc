@@ -5,7 +5,7 @@ import 'package:secure_vault/services/auth_service.dart';
 import 'package:secure_vault/services/secure_storage_service.dart';
 import 'package:secure_vault/utils/constants.dart';
 // We will create AuthGate in the next step
-// import 'package:secure_vault/screens/auth/auth_gate.dart';
+import 'package:secure_vault/screens/auth/auth_gate.dart';
 
 void main() {
   // We will initialize Isar and other services here later
@@ -44,9 +44,10 @@ class MyApp extends StatelessWidget {
         theme: kDarkTheme,
         debugShowCheckedModeBanner: false,
         // The AuthGate will decide which screen to show
-        // home: AuthGate(),
+        home: const AuthGate(),
 
         // Placeholder for now until we build AuthGate
+        /*
         home: const Scaffold(
           body: Center(
             child: Text(
@@ -55,6 +56,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
         ),
+        */
       ),
     );
   }
